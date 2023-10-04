@@ -1,4 +1,6 @@
 using GraphQLHotChocolate.Shcema.Queries;
+using GraphQLHotChocolate.Shcema.Subscriptions;
+using HotChocolate.Subscriptions;
 
 namespace GraphQLHotChocolate.Shcema.Mutations;
 /// <summary>
@@ -18,12 +20,13 @@ public class Mutation
     {
         _courses = new List<CourseResult>();
     }
-    /// <summary>
-    /// This method creates courses
-    /// </summary>
-    /// <param name="courseInput">Object that has multiple properties requested to create a new CourseResult Object</param>
-    /// <returns> Course Result</returns>
-    public CourseResult CreateCourse(CourseInputType courseInput)
+  /// <summary>
+  /// This method creates a course and also implments the  publisher/subscription relationship through hotchocolate
+  /// </summary>
+  /// <param name="courseInput">Object that contains multiple properties relevant for course Creation</param>
+  /// <param name="topicEventSender">parameter that enables helps to publish the subscription</param>
+  /// <returns>Task<CourseResult></returns>
+    public async Task<CourseResult> CreateCourse(CourseInputType courseInput,[Service] ITopicEventSender topicEventSender)
     {
         CourseResult courseType = new CourseResult()
         {
@@ -33,6 +36,7 @@ public class Mutation
             InstrucotrId = courseInput.InstructorId
         };
         _courses.Add(courseType);
+        await topicEventSender.SendAsync(nameof(Subscription.CourseCreated), courseType);
         return courseType;
     }
     /// <summary>
@@ -43,7 +47,7 @@ public class Mutation
     /// <returns>Course Result</returns>
     /// <exception cref="GraphQLException">Throws exception if the course id returns a null result (Course not found)</exception>
 
-    public CourseResult UpdateCourse(Guid id,CourseInputType courseInput)
+    public  CourseResult UpdateCourse(Guid id,CourseInputType courseInput)
     {
        CourseResult course =  _courses.FirstOrDefault(c => c.Id == id);
 
@@ -58,6 +62,7 @@ public class Mutation
        course.Name = courseInput.Name;
        course.Subject = courseInput.Subject;
        course.InstrucotrId = courseInput.InstructorId;
+        
        return course;
     }
 /// <summary>
