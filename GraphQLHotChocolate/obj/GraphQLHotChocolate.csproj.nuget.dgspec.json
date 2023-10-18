@@ -46,13 +46,31 @@
               "target": "Package",
               "version": "[13.6.0-preview.21, )"
             },
+            "HotChocolate.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[13.6.0-preview.23, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.22, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "SqlServerCompact": {
+              "target": "Package",
+              "version": "[4.0.8854.1, )"
             }
           },
           "imports": [

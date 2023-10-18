@@ -30,7 +30,7 @@
           }
         }
       },
-      "GreenDonut/13.6.0-preview.21": {
+      "GreenDonut/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ObjectPool": "3.1.4",
@@ -48,23 +48,23 @@
           }
         }
       },
-      "HotChocolate/13.6.0-preview.21": {
+      "HotChocolate/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Authorization": "13.6.0-preview.21",
-          "HotChocolate.Execution": "13.6.0-preview.21",
-          "HotChocolate.Fetching": "13.6.0-preview.21",
-          "HotChocolate.Types": "13.6.0-preview.21",
-          "HotChocolate.Types.CursorPagination": "13.6.0-preview.21",
-          "HotChocolate.Types.Mutations": "13.6.0-preview.21",
-          "HotChocolate.Types.OffsetPagination": "13.6.0-preview.21",
-          "HotChocolate.Validation": "13.6.0-preview.21"
+          "HotChocolate.Authorization": "13.6.0-preview.23",
+          "HotChocolate.Execution": "13.6.0-preview.23",
+          "HotChocolate.Fetching": "13.6.0-preview.23",
+          "HotChocolate.Types": "13.6.0-preview.23",
+          "HotChocolate.Types.CursorPagination": "13.6.0-preview.23",
+          "HotChocolate.Types.Mutations": "13.6.0-preview.23",
+          "HotChocolate.Types.OffsetPagination": "13.6.0-preview.23",
+          "HotChocolate.Validation": "13.6.0-preview.23"
         }
       },
-      "HotChocolate.Abstractions/13.6.0-preview.21": {
+      "HotChocolate.Abstractions/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language": "13.6.0-preview.21",
+          "HotChocolate.Language": "13.6.0-preview.23",
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
           "System.Collections.Immutable": "1.7.0"
         },
@@ -106,10 +106,10 @@
           "build/HotChocolate.AspNetCore.targets": {}
         }
       },
-      "HotChocolate.Authorization/13.6.0-preview.21": {
+      "HotChocolate.Authorization/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "13.6.0-preview.21"
+          "HotChocolate.Execution": "13.6.0-preview.23"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Authorization.dll": {
@@ -122,14 +122,56 @@
           }
         }
       },
-      "HotChocolate.Execution/13.6.0-preview.21": {
+      "HotChocolate.Data/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Abstractions": "13.6.0-preview.21",
-          "HotChocolate.Execution.Abstractions": "13.6.0-preview.21",
-          "HotChocolate.Fetching": "13.6.0-preview.21",
-          "HotChocolate.Types": "13.6.0-preview.21",
-          "HotChocolate.Validation": "13.6.0-preview.21",
+          "HotChocolate.Execution": "13.6.0-preview.23",
+          "HotChocolate.Types.CursorPagination": "13.6.0-preview.23"
+        },
+        "compile": {
+          "lib/net6.0/HotChocolate.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/HotChocolate.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "HotChocolate.Data.EntityFramework/13.6.0-preview.23": {
+        "type": "package",
+        "dependencies": {
+          "HotChocolate": "13.6.0-preview.23",
+          "HotChocolate.Data": "13.6.0-preview.23",
+          "Microsoft.EntityFrameworkCore": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/HotChocolate.Data.EntityFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/HotChocolate.Data.EntityFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/HotChocolate.Data.EntityFramework.props": {},
+          "build/HotChocolate.Data.EntityFramework.targets": {}
+        }
+      },
+      "HotChocolate.Execution/13.6.0-preview.23": {
+        "type": "package",
+        "dependencies": {
+          "HotChocolate.Abstractions": "13.6.0-preview.23",
+          "HotChocolate.Execution.Abstractions": "13.6.0-preview.23",
+          "HotChocolate.Fetching": "13.6.0-preview.23",
+          "HotChocolate.Types": "13.6.0-preview.23",
+          "HotChocolate.Validation": "13.6.0-preview.23",
           "Microsoft.Extensions.DependencyInjection": "3.1.4",
           "Microsoft.Extensions.DiagnosticAdapter": "3.1.4",
           "System.Threading.Channels": "4.7.0"
@@ -145,10 +187,10 @@
           }
         }
       },
-      "HotChocolate.Execution.Abstractions/13.6.0-preview.21": {
+      "HotChocolate.Execution.Abstractions/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Abstractions": "13.6.0-preview.21",
+          "HotChocolate.Abstractions": "13.6.0-preview.23",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.4"
         },
         "compile": {
@@ -162,11 +204,11 @@
           }
         }
       },
-      "HotChocolate.Fetching/13.6.0-preview.21": {
+      "HotChocolate.Fetching/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "GreenDonut": "13.6.0-preview.21",
-          "HotChocolate.Types": "13.6.0-preview.21"
+          "GreenDonut": "13.6.0-preview.23",
+          "HotChocolate.Types": "13.6.0-preview.23"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Fetching.dll": {
@@ -179,13 +221,13 @@
           }
         }
       },
-      "HotChocolate.Language/13.6.0-preview.21": {
+      "HotChocolate.Language/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language.SyntaxTree": "13.6.0-preview.21",
-          "HotChocolate.Language.Utf8": "13.6.0-preview.21",
-          "HotChocolate.Language.Visitors": "13.6.0-preview.21",
-          "HotChocolate.Language.Web": "13.6.0-preview.21"
+          "HotChocolate.Language.SyntaxTree": "13.6.0-preview.23",
+          "HotChocolate.Language.Utf8": "13.6.0-preview.23",
+          "HotChocolate.Language.Visitors": "13.6.0-preview.23",
+          "HotChocolate.Language.Web": "13.6.0-preview.23"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Language.dll": {
@@ -198,7 +240,7 @@
           }
         }
       },
-      "HotChocolate.Language.SyntaxTree/13.6.0-preview.21": {
+      "HotChocolate.Language.SyntaxTree/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ObjectPool": "3.1.4"
@@ -210,10 +252,10 @@
           "lib/net6.0/HotChocolate.Language.SyntaxTree.dll": {}
         }
       },
-      "HotChocolate.Language.Utf8/13.6.0-preview.21": {
+      "HotChocolate.Language.Utf8/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language.SyntaxTree": "13.6.0-preview.21"
+          "HotChocolate.Language.SyntaxTree": "13.6.0-preview.23"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Language.Utf8.dll": {
@@ -226,10 +268,10 @@
           }
         }
       },
-      "HotChocolate.Language.Visitors/13.6.0-preview.21": {
+      "HotChocolate.Language.Visitors/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language.SyntaxTree": "13.6.0-preview.21"
+          "HotChocolate.Language.SyntaxTree": "13.6.0-preview.23"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Language.Visitors.dll": {
@@ -242,10 +284,10 @@
           }
         }
       },
-      "HotChocolate.Language.Web/13.6.0-preview.21": {
+      "HotChocolate.Language.Web/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language.Utf8": "13.6.0-preview.21"
+          "HotChocolate.Language.Utf8": "13.6.0-preview.23"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Language.Web.dll": {
@@ -309,12 +351,12 @@
           }
         }
       },
-      "HotChocolate.Types/13.6.0-preview.21": {
+      "HotChocolate.Types/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Abstractions": "13.6.0-preview.21",
-          "HotChocolate.Utilities": "13.6.0-preview.21",
-          "HotChocolate.Utilities.Introspection": "13.6.0-preview.21",
+          "HotChocolate.Abstractions": "13.6.0-preview.23",
+          "HotChocolate.Utilities": "13.6.0-preview.23",
+          "HotChocolate.Utilities.Introspection": "13.6.0-preview.23",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.4",
           "Microsoft.Extensions.ObjectPool": "3.1.4",
           "System.ComponentModel.Annotations": "4.7.0",
@@ -331,11 +373,11 @@
           }
         }
       },
-      "HotChocolate.Types.CursorPagination/13.6.0-preview.21": {
+      "HotChocolate.Types.CursorPagination/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "13.6.0-preview.21",
-          "HotChocolate.Types": "13.6.0-preview.21"
+          "HotChocolate.Execution": "13.6.0-preview.23",
+          "HotChocolate.Types": "13.6.0-preview.23"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Types.CursorPagination.dll": {
@@ -348,11 +390,11 @@
           }
         }
       },
-      "HotChocolate.Types.Mutations/13.6.0-preview.21": {
+      "HotChocolate.Types.Mutations/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "13.6.0-preview.21",
-          "HotChocolate.Types": "13.6.0-preview.21"
+          "HotChocolate.Execution": "13.6.0-preview.23",
+          "HotChocolate.Types": "13.6.0-preview.23"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Types.Mutations.dll": {
@@ -365,11 +407,11 @@
           }
         }
       },
-      "HotChocolate.Types.OffsetPagination/13.6.0-preview.21": {
+      "HotChocolate.Types.OffsetPagination/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "13.6.0-preview.21",
-          "HotChocolate.Types": "13.6.0-preview.21"
+          "HotChocolate.Execution": "13.6.0-preview.23",
+          "HotChocolate.Types": "13.6.0-preview.23"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Types.OffsetPagination.dll": {
@@ -398,7 +440,7 @@
           }
         }
       },
-      "HotChocolate.Utilities/13.6.0-preview.21": {
+      "HotChocolate.Utilities/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
@@ -416,10 +458,10 @@
           }
         }
       },
-      "HotChocolate.Utilities.Introspection/13.6.0-preview.21": {
+      "HotChocolate.Utilities.Introspection/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language": "13.6.0-preview.21",
+          "HotChocolate.Language": "13.6.0-preview.23",
           "System.Text.Json": "6.0.7"
         },
         "compile": {
@@ -433,10 +475,10 @@
           }
         }
       },
-      "HotChocolate.Validation/13.6.0-preview.21": {
+      "HotChocolate.Validation/13.6.0-preview.23": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Types": "13.6.0-preview.21",
+          "HotChocolate.Types": "13.6.0-preview.23",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.4",
           "Microsoft.Extensions.Options": "3.1.4"
         },
@@ -447,6 +489,19 @@
         },
         "runtime": {
           "lib/net6.0/HotChocolate.Validation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Humanizer.Core/2.8.26": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {
             "related": ".xml"
           }
         }
@@ -527,6 +582,22 @@
           }
         }
       },
+      "Microsoft.Data.Sqlite.Core/6.0.22": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.2"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore/6.0.22": {
         "type": "package",
         "dependencies": {
@@ -574,6 +645,26 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Design/6.0.22": {
+        "type": "package",
+        "dependencies": {
+          "Humanizer.Core": "2.8.26",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.22"
+        },
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.22": {
         "type": "package",
         "dependencies": {
@@ -587,6 +678,37 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Sqlite/6.0.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "6.0.22",
+          "SQLitePCLRaw.bundle_e_sqlite3": "2.1.2"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Sqlite.Core/6.0.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "6.0.22",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.22",
+          "Microsoft.Extensions.DependencyModel": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
             "related": ".xml"
           }
         }
@@ -694,6 +816,26 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Text.Json": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DiagnosticAdapter/3.1.4": {
@@ -900,6 +1042,17 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.SqlServer.Compact/4.0.8854.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      },
       "Microsoft.Win32.Registry/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -947,6 +1100,160 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.lib.e_sqlite3": "2.1.2",
+          "SQLitePCLRaw.provider.e_sqlite3": "2.1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/2.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/SQLitePCLRaw.lib.e_sqlite3.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/alpine-arm/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "alpine-arm"
+          },
+          "runtimes/alpine-arm64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "alpine-arm64"
+          },
+          "runtimes/alpine-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "alpine-x64"
+          },
+          "runtimes/browser-wasm/nativeassets/net6.0/e_sqlite3.a": {
+            "assetType": "native",
+            "rid": "browser-wasm"
+          },
+          "runtimes/linux-arm/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-armel/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-armel"
+          },
+          "runtimes/linux-mips64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-mips64"
+          },
+          "runtimes/linux-musl-arm/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-s390x/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-s390x"
+          },
+          "runtimes/linux-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x86/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-x86"
+          },
+          "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3/2.1.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.2"
+        },
+        "compile": {
+          "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "SqlServerCompact/4.0.8854.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.SqlServer.Compact": "4.0.8854.1"
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Collections.Immutable/6.0.0": {
@@ -1399,16 +1706,16 @@
         "lib/netstandard2.0/Bogus.xml"
       ]
     },
-    "GreenDonut/13.6.0-preview.21": {
-      "sha512": "wnXxj2xJxJUEIZISS3H4zZzdORj9Da86IFxxwRbSbSDPo7kmuYjE3ESG2RfkT8a2D7m6EPUwTFcOqVH87yrTyQ==",
+    "GreenDonut/13.6.0-preview.23": {
+      "sha512": "PNZMehG7wZARjgxoFzWpgLTc8mQe8Qf8VGsoC4Se8o7fGh2sNOzj6idBjDb2CNA4PTjdEodFLR75lezIxFN9Sw==",
       "type": "package",
-      "path": "greendonut/13.6.0-preview.21",
+      "path": "greendonut/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
-        "greendonut.13.6.0-preview.21.nupkg.sha512",
+        "greendonut.13.6.0-preview.23.nupkg.sha512",
         "greendonut.nuspec",
         "hotchocolate-signet.png",
         "lib/net6.0/GreenDonut.dll",
@@ -1422,32 +1729,32 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate/13.6.0-preview.21": {
-      "sha512": "s4eBWvhFIbQqezkOfW0p/rz9i9JJjrU1aOJhdFgsRrCPkvUs9NFYpQQtaQaPNU3K07kF9DCoW1Ih1fH5d09f5g==",
+    "HotChocolate/13.6.0-preview.23": {
+      "sha512": "JTIIHtm5Sao6an9ad+CC/2DXWjg3Oop2W/Y6fC5R0DG6asrBHfnei0WT8LY7jyO1a6pvFvsh/RmXvjSZ08nrxA==",
       "type": "package",
-      "path": "hotchocolate/13.6.0-preview.21",
+      "path": "hotchocolate/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.nuspec",
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Abstractions/13.6.0-preview.21": {
-      "sha512": "W2GxdwyLFYZ6v33e527nFjf+UzFuFKCsmIf7rpjk8I70TuQ9VKAzqA1t4hKQFJ4wj9w5iGSmFTIiXjRuCd+JpA==",
+    "HotChocolate.Abstractions/13.6.0-preview.23": {
+      "sha512": "vLKiZTDcuWTelW0syJg7HmGpc7zgTtSTCnANw1ic0q/bhGFPSFfoHzolkNbJIUvdzlUNUZ8Efg72DQfGi2adJw==",
       "type": "package",
-      "path": "hotchocolate.abstractions/13.6.0-preview.21",
+      "path": "hotchocolate.abstractions/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.abstractions.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.abstractions.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.abstractions.nuspec",
         "lib/net6.0/HotChocolate.Abstractions.dll",
         "lib/net6.0/HotChocolate.Abstractions.xml",
@@ -1483,17 +1790,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Authorization/13.6.0-preview.21": {
-      "sha512": "bUhyoRszAkkOHpy84T9dQ3ATM+oCJLPertN8TpM0ooohYXHiZqdKzGgcqQD2uvUtTqAppS7X+CDzWduz/2Gh5g==",
+    "HotChocolate.Authorization/13.6.0-preview.23": {
+      "sha512": "K3gbW1RqOftuHnxwaSAwLhFH6mM6/Us7944Bw9NnhMLKmII5EoT11/+tnW/hRGPB1uHoAz/OWnU4zUveg4luKg==",
       "type": "package",
-      "path": "hotchocolate.authorization/13.6.0-preview.21",
+      "path": "hotchocolate.authorization/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.authorization.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.authorization.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.authorization.nuspec",
         "lib/net6.0/HotChocolate.Authorization.dll",
         "lib/net6.0/HotChocolate.Authorization.xml",
@@ -1506,17 +1813,63 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Execution/13.6.0-preview.21": {
-      "sha512": "y1+iQ/D5Y+PMRYXpsytCszL5ihDw9SNJQB/rcWLpk/pvtUM8VtKcDw/8xsDkySIuDH83bYlbdT9je3YIiH6UQw==",
+    "HotChocolate.Data/13.6.0-preview.23": {
+      "sha512": "+DDxBGNxh2dYj9KUenC03p1+XoC+0YjbpqSRXwFVmDvaQlst8wJFGDjFRommnza5a5ov6Cb0kMBThwgtvNimng==",
       "type": "package",
-      "path": "hotchocolate.execution/13.6.0-preview.21",
+      "path": "hotchocolate.data/13.6.0-preview.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/HotChocolate.Data.props",
+        "build/HotChocolate.Data.targets",
+        "greendonut-signet.png",
+        "hotchocolate-signet.png",
+        "hotchocolate.data.13.6.0-preview.23.nupkg.sha512",
+        "hotchocolate.data.nuspec",
+        "lib/net6.0/HotChocolate.Data.dll",
+        "lib/net6.0/HotChocolate.Data.xml",
+        "lib/net7.0/HotChocolate.Data.dll",
+        "lib/net7.0/HotChocolate.Data.xml",
+        "lib/net8.0/HotChocolate.Data.dll",
+        "lib/net8.0/HotChocolate.Data.xml",
+        "strawberryshake-signet.png"
+      ]
+    },
+    "HotChocolate.Data.EntityFramework/13.6.0-preview.23": {
+      "sha512": "sHQJpZegMuUAjviCNjcYkx8Ld+3emKunnIMjjIKNaC/6D8RYCfWL+P7jWVxwjF3LS4yytfS2JAbUbJpP3/q+vA==",
+      "type": "package",
+      "path": "hotchocolate.data.entityframework/13.6.0-preview.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/HotChocolate.Data.EntityFramework.props",
+        "build/HotChocolate.Data.EntityFramework.targets",
+        "greendonut-signet.png",
+        "hotchocolate-signet.png",
+        "hotchocolate.data.entityframework.13.6.0-preview.23.nupkg.sha512",
+        "hotchocolate.data.entityframework.nuspec",
+        "lib/net6.0/HotChocolate.Data.EntityFramework.dll",
+        "lib/net6.0/HotChocolate.Data.EntityFramework.xml",
+        "lib/net7.0/HotChocolate.Data.EntityFramework.dll",
+        "lib/net7.0/HotChocolate.Data.EntityFramework.xml",
+        "lib/net8.0/HotChocolate.Data.EntityFramework.dll",
+        "lib/net8.0/HotChocolate.Data.EntityFramework.xml",
+        "strawberryshake-signet.png"
+      ]
+    },
+    "HotChocolate.Execution/13.6.0-preview.23": {
+      "sha512": "FVk+HZRZJjfEnSyahwC7ZYs8c6oig1nurdaxUKAMvO5ishMrZnk4rL+L8g6mM7I1S2i/bj1uXZ7GiiQ8aBNxWg==",
+      "type": "package",
+      "path": "hotchocolate.execution/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.execution.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.execution.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.execution.nuspec",
         "lib/net6.0/HotChocolate.Execution.dll",
         "lib/net6.0/HotChocolate.Execution.xml",
@@ -1529,17 +1882,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Execution.Abstractions/13.6.0-preview.21": {
-      "sha512": "mS+W9hMqzwJDaHTOiR6rwsH01E/n+kmb1Rw88xRTokYkTwFb2LxiGVrtPu4238/45aLcAFggqYzoj03uy3QtSQ==",
+    "HotChocolate.Execution.Abstractions/13.6.0-preview.23": {
+      "sha512": "ie1HJjg7WrN+7J9RPtXohmmmmlJQ93jXPypmcexmuZi9QIDpCs9WJ8QzQ9qY/ZQmGBH0EZCKKX9uptggHQcugA==",
       "type": "package",
-      "path": "hotchocolate.execution.abstractions/13.6.0-preview.21",
+      "path": "hotchocolate.execution.abstractions/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.execution.abstractions.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.execution.abstractions.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.execution.abstractions.nuspec",
         "lib/net6.0/HotChocolate.Execution.Abstractions.dll",
         "lib/net6.0/HotChocolate.Execution.Abstractions.xml",
@@ -1552,17 +1905,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Fetching/13.6.0-preview.21": {
-      "sha512": "E/jQeyCycsCiB/1aU5aVSbbS3vZmsz1HGYdEq6SyZdDNXDhX5bUBO/z5KIAb9i9c91bdqJyY27lUb0/2d/LvDw==",
+    "HotChocolate.Fetching/13.6.0-preview.23": {
+      "sha512": "tI1bCZ5AhcWzPp9HfCX+PHCahOuEeta1mNqyWdaozgcoHq4LuNy7gIpNpS9/zVEMSEWj/kDPm7o1/ejeCnSPbA==",
       "type": "package",
-      "path": "hotchocolate.fetching/13.6.0-preview.21",
+      "path": "hotchocolate.fetching/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.fetching.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.fetching.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.fetching.nuspec",
         "lib/net6.0/HotChocolate.Fetching.dll",
         "lib/net6.0/HotChocolate.Fetching.xml",
@@ -1575,17 +1928,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Language/13.6.0-preview.21": {
-      "sha512": "JYozqWixdtelaXDlh07+pvwkfxaPMOAbi3/JiSt5eEITSOH28YscpyWbhpjUnMnYmiI6+ELStYC933G2EXgBxw==",
+    "HotChocolate.Language/13.6.0-preview.23": {
+      "sha512": "wHmSNeid3jzN7M65zFPVubuNUgqi9UinpMJeX6etdqTmpnfvJzuLoyF6jaB2yUzom8zP+m0yaxdFWLA38dAk/Q==",
       "type": "package",
-      "path": "hotchocolate.language/13.6.0-preview.21",
+      "path": "hotchocolate.language/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.language.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.language.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.language.nuspec",
         "lib/net6.0/HotChocolate.Language.dll",
         "lib/net6.0/HotChocolate.Language.xml",
@@ -1598,17 +1951,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Language.SyntaxTree/13.6.0-preview.21": {
-      "sha512": "FYpK+d8ns9ZIEcDfcVWQkAWy8peZlDzHYOVJarytbWRKnHl4NHd5vlrlIFqLPUh6eS6JkmxykREdVQK3lzKa+w==",
+    "HotChocolate.Language.SyntaxTree/13.6.0-preview.23": {
+      "sha512": "9vn4172PenmQaW9jyZu5mi9db5BnO809/DfBPcmkbvAAC4LORLPZHdR0Ul2AuepR6WNaPJO6kbX62AkHnl26yA==",
       "type": "package",
-      "path": "hotchocolate.language.syntaxtree/13.6.0-preview.21",
+      "path": "hotchocolate.language.syntaxtree/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.language.syntaxtree.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.language.syntaxtree.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.language.syntaxtree.nuspec",
         "lib/net6.0/HotChocolate.Language.SyntaxTree.dll",
         "lib/net7.0/HotChocolate.Language.SyntaxTree.dll",
@@ -1617,17 +1970,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Language.Utf8/13.6.0-preview.21": {
-      "sha512": "71KQIEOYeDrS9Wmj1II4or2BHQxB7WBF6lYDRXQYPrs0mzydN1DLG+09yFoBjOGezOy359a/ZDJgTh2ja6cR1A==",
+    "HotChocolate.Language.Utf8/13.6.0-preview.23": {
+      "sha512": "nR0YEaWHuISsOW0VmSG/GWUohUUTZLVoGwUKkAwdi2x1or/suRRbNAvDzfk22EL0EiHSVi+6Q8QQ+DfK0W/UFw==",
       "type": "package",
-      "path": "hotchocolate.language.utf8/13.6.0-preview.21",
+      "path": "hotchocolate.language.utf8/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.language.utf8.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.language.utf8.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.language.utf8.nuspec",
         "lib/net6.0/HotChocolate.Language.Utf8.dll",
         "lib/net6.0/HotChocolate.Language.Utf8.xml",
@@ -1640,17 +1993,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Language.Visitors/13.6.0-preview.21": {
-      "sha512": "l4OJQrlW2tDZlokkihEvGLiwLyszlVrhBHx2NZCpoCcPr+VdbsJ9zGgJlicv94LUZmLuthVHnFwqdGRxcGWjsA==",
+    "HotChocolate.Language.Visitors/13.6.0-preview.23": {
+      "sha512": "r/3OowKNcokn9sVdQpDr2AJiJhlZDkbAu1GD27QJLC1ixbTVzgZxQcWOvy+NbrLwzuzKZ/DtEGIk/YMjgPzlOA==",
       "type": "package",
-      "path": "hotchocolate.language.visitors/13.6.0-preview.21",
+      "path": "hotchocolate.language.visitors/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.language.visitors.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.language.visitors.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.language.visitors.nuspec",
         "lib/net6.0/HotChocolate.Language.Visitors.dll",
         "lib/net6.0/HotChocolate.Language.Visitors.xml",
@@ -1663,17 +2016,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Language.Web/13.6.0-preview.21": {
-      "sha512": "C67v7g45d+N8x4G/Icgizs3nm+PKlZJ8oLcPD4jZ6GI3ZSD8BuRKEMI2iB/+UpRYWRmRbRJlF9QZ6m3fP9AnlA==",
+    "HotChocolate.Language.Web/13.6.0-preview.23": {
+      "sha512": "1Nd12Ma+t16ydrE7GojwQTVrR41H4NYdmgNBXsEDdd27H3SRGFtzFP4yZvKuBVrT6Mek3b/PKW9I2EF47caUYA==",
       "type": "package",
-      "path": "hotchocolate.language.web/13.6.0-preview.21",
+      "path": "hotchocolate.language.web/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.language.web.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.language.web.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.language.web.nuspec",
         "lib/net6.0/HotChocolate.Language.Web.dll",
         "lib/net6.0/HotChocolate.Language.Web.xml",
@@ -1751,17 +2104,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Types/13.6.0-preview.21": {
-      "sha512": "VyzFVL68eMfcp6HbDAIZ0bQivBruxQCY2auL3i6XF6RjCDo50L9bvo/91hOeIRWgHA/XIUV4UoKIVJAhN/PxJg==",
+    "HotChocolate.Types/13.6.0-preview.23": {
+      "sha512": "SBs/MqxPz/pC/2wvKmcDm7U4/9XxLlBPCRP7v4gte5U2OEjxaxux/FOtqKPomINBC0yWjul6ozyWNt31/TNO8g==",
       "type": "package",
-      "path": "hotchocolate.types/13.6.0-preview.21",
+      "path": "hotchocolate.types/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.types.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.types.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.types.nuspec",
         "lib/net6.0/HotChocolate.Types.dll",
         "lib/net6.0/HotChocolate.Types.xml",
@@ -1774,17 +2127,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Types.CursorPagination/13.6.0-preview.21": {
-      "sha512": "CLwVpfIW0YMHSiJ+V2M5BAsOZmVYXekMjgjZEDpSfkELcgy10auQFQBVpaGvssmu94/iatePdY+t0wwWXq3r3w==",
+    "HotChocolate.Types.CursorPagination/13.6.0-preview.23": {
+      "sha512": "gdHO1GGMUEk765FqOJTcKD5Dabv+lik4ZjSs3Rg0vevT9Jl/+hufNj1TrhdFoBCXjEbFO+db+3O65FwdLdH6Jg==",
       "type": "package",
-      "path": "hotchocolate.types.cursorpagination/13.6.0-preview.21",
+      "path": "hotchocolate.types.cursorpagination/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.types.cursorpagination.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.types.cursorpagination.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.types.cursorpagination.nuspec",
         "lib/net6.0/HotChocolate.Types.CursorPagination.dll",
         "lib/net6.0/HotChocolate.Types.CursorPagination.xml",
@@ -1797,17 +2150,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Types.Mutations/13.6.0-preview.21": {
-      "sha512": "+FvvPqGQey+re7KQ1suXdBDEUmsquW9fXqO9mxrlWmoK8pQw4LIybGHd/t5T3ivivcRHND0N1oRsLhC8aBcT/A==",
+    "HotChocolate.Types.Mutations/13.6.0-preview.23": {
+      "sha512": "az/PMR3LfR9nqXAWzUi7L/RPqxqingAUFhiEW7Zu+w78NNh/pR2ckPTec69zssx+dFrayyZl4NPQxcJfXlH4Gg==",
       "type": "package",
-      "path": "hotchocolate.types.mutations/13.6.0-preview.21",
+      "path": "hotchocolate.types.mutations/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.types.mutations.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.types.mutations.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.types.mutations.nuspec",
         "lib/net6.0/HotChocolate.Types.Mutations.dll",
         "lib/net6.0/HotChocolate.Types.Mutations.xml",
@@ -1820,17 +2173,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Types.OffsetPagination/13.6.0-preview.21": {
-      "sha512": "3sdKrxVoAGL08S+lxnEvd4uCCvKizYPleg4eekiKjVcP/UPwVQ9DS2n8ZUXfcXxWtZHaZUJGJ7AcryeUl51yeg==",
+    "HotChocolate.Types.OffsetPagination/13.6.0-preview.23": {
+      "sha512": "1Oms+t9op9ankJ+eXkRkMHmN8kLFApQy1TsD9UB/GtxRVcvVCcg7ZTjHAWfMUx/muRhE9ZYKwvqwgI+2aD3N6g==",
       "type": "package",
-      "path": "hotchocolate.types.offsetpagination/13.6.0-preview.21",
+      "path": "hotchocolate.types.offsetpagination/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.types.offsetpagination.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.types.offsetpagination.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.types.offsetpagination.nuspec",
         "lib/net6.0/HotChocolate.Types.OffsetPagination.dll",
         "lib/net6.0/HotChocolate.Types.OffsetPagination.xml",
@@ -1866,17 +2219,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Utilities/13.6.0-preview.21": {
-      "sha512": "TASU8T1UB9NuHavA0OCJ7Kl7bCUAvEyE7ZSVfNQxErjKeyU1WX46dcAXHSha0Cki6qg77woHBSi4LUMBKOiHfA==",
+    "HotChocolate.Utilities/13.6.0-preview.23": {
+      "sha512": "8uvRfWNl1pV+fghNqq+RShzMqIJJ4ew3ahr1P/pJ2HaoyUQT2xT5L5LrMW9nmkZ0UKk+ZDyB/bMTIpFNIRb80g==",
       "type": "package",
-      "path": "hotchocolate.utilities/13.6.0-preview.21",
+      "path": "hotchocolate.utilities/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.utilities.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.utilities.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.utilities.nuspec",
         "lib/net6.0/HotChocolate.Utilities.dll",
         "lib/net6.0/HotChocolate.Utilities.xml",
@@ -1889,17 +2242,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Utilities.Introspection/13.6.0-preview.21": {
-      "sha512": "9Teog039aozcREdhhUVo2basEvg1T4uqfjkknE7yId37WrnQYgktCjURhPEPbBcoBrQLBxyR4B6iNYLrQlZJlg==",
+    "HotChocolate.Utilities.Introspection/13.6.0-preview.23": {
+      "sha512": "jhP+v43Lcl2Dg4wsdsFnNTKuV7HzAnNcfHUeYHQQuUQL4C7ndkiVIEIJPGXdKcpabd9kARBSdIVyYzc4gdgBpg==",
       "type": "package",
-      "path": "hotchocolate.utilities.introspection/13.6.0-preview.21",
+      "path": "hotchocolate.utilities.introspection/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.utilities.introspection.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.utilities.introspection.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.utilities.introspection.nuspec",
         "lib/net6.0/HotChocolate.Utilities.Introspection.dll",
         "lib/net6.0/HotChocolate.Utilities.Introspection.xml",
@@ -1912,17 +2265,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Validation/13.6.0-preview.21": {
-      "sha512": "KktcDSg4AUhpGr5Pai7WPT9GRXgvZu9sWYyWfD/stMJOk6/If1Lagxai65DJSaSsqs9eXUV/wckjFo33CAuzKA==",
+    "HotChocolate.Validation/13.6.0-preview.23": {
+      "sha512": "stCgTM2uwlcoodbpEa38GB03NbuyPJoE8mUj+t270R0WL20nfRDWcsomnnoYblvlC84bQCbbr6FBB1dVtNUoZA==",
       "type": "package",
-      "path": "hotchocolate.validation/13.6.0-preview.21",
+      "path": "hotchocolate.validation/13.6.0-preview.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.validation.13.6.0-preview.21.nupkg.sha512",
+        "hotchocolate.validation.13.6.0-preview.23.nupkg.sha512",
         "hotchocolate.validation.nuspec",
         "lib/net6.0/HotChocolate.Validation.dll",
         "lib/net6.0/HotChocolate.Validation.xml",
@@ -1933,6 +2286,22 @@
         "lib/netstandard2.0/HotChocolate.Validation.dll",
         "lib/netstandard2.0/HotChocolate.Validation.xml",
         "strawberryshake-signet.png"
+      ]
+    },
+    "Humanizer.Core/2.8.26": {
+      "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
+      "type": "package",
+      "path": "humanizer.core/2.8.26",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.2.8.26.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -2114,6 +2483,22 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
+    "Microsoft.Data.Sqlite.Core/6.0.22": {
+      "sha512": "gtIGHbGnRq/h4mFSJYr9BdMObvJV/a67nBubs50VjPDusQARtWJzeVTirDWsbL1qTvGzbbZCD7VE7+s2ixZfow==",
+      "type": "package",
+      "path": "microsoft.data.sqlite.core/6.0.22",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.Data.Sqlite.dll",
+        "lib/net6.0/Microsoft.Data.Sqlite.xml",
+        "lib/netstandard2.0/Microsoft.Data.Sqlite.dll",
+        "lib/netstandard2.0/Microsoft.Data.Sqlite.xml",
+        "microsoft.data.sqlite.core.6.0.22.nupkg.sha512",
+        "microsoft.data.sqlite.core.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/6.0.22": {
       "sha512": "vNe+y8ZsEf1CsfmfYttfKAz/IgCCtphgguvao0HWNJNdjZf9cabD288nZJ17b/WaQMWXhLwYAsofk8vNVkfTOA==",
       "type": "package",
@@ -2157,6 +2542,21 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Design/6.0.22": {
+      "sha512": "es9TKd0cpM263Ou0QMEETN7MDzD7kXDkThiiXl1+c/69v97AZlzeLoM5tDdC0RC4L74ZWyk3+WMnoDPL93DDyQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/6.0.22",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.Relational/6.0.22": {
       "sha512": "W7yfdEbEuS1OPPxU0EOA6haqI4uvzs7OwHKh81DiJFn3NFNP2ztSovkOzBDhTwHX0j+OySsAj3BEJhuzTVYIVw==",
       "type": "package",
@@ -2169,6 +2569,33 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
         "microsoft.entityframeworkcore.relational.6.0.22.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Sqlite/6.0.22": {
+      "sha512": "EDKnYZtxq7P131xxLsEokda86WnFRiVAveLVAYR8kzyWl/UwTpf/RS2m2FrbH/U8vX3A+IQNpabtxcjtCUrY0g==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.sqlite/6.0.22",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/_._",
+        "microsoft.entityframeworkcore.sqlite.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlite.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Sqlite.Core/6.0.22": {
+      "sha512": "xSU77ORQgwlD+s5Cmlk9DzoSCu5oxlHLuQl+v5zAZ0Uv5yH17hp02TBfz3x9nBA+CrIsqaLjGEuyZmLDf/5ATw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.sqlite.core/6.0.22",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.xml",
+        "microsoft.entityframeworkcore.sqlite.core.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlite.core.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/6.0.22": {
@@ -2289,6 +2716,25 @@
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyModel/6.0.0": {
+      "sha512": "TD5QHg98m3+QhgEV1YVoNMl5KtBw/4rjfxLHO0e/YV9bPUBDKntApP4xdrVtGgCeQZHVfC2EXIGsdpRNrr87Pg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencymodel/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyModel.dll",
+        "lib/net461/Microsoft.Extensions.DependencyModel.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.xml",
+        "microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencymodel.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -2593,6 +3039,44 @@
         "version.txt"
       ]
     },
+    "Microsoft.SqlServer.Compact/4.0.8854.1": {
+      "sha512": "Lv3xL4PFzgDAXq09GBtf6kf8K5eW/arPNBQCLnPWWdEIcZqe0i/OpMIAc/fC88SKnU3gHxK208MV7BtDXRkMTA==",
+      "type": "package",
+      "path": "microsoft.sqlserver.compact/4.0.8854.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/web.config.transform",
+        "NativeBinaries/amd64/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest",
+        "NativeBinaries/amd64/Microsoft.VC90.CRT/README_ENU.txt",
+        "NativeBinaries/amd64/Microsoft.VC90.CRT/msvcr90.dll",
+        "NativeBinaries/amd64/sqlceca40.dll",
+        "NativeBinaries/amd64/sqlcecompact40.dll",
+        "NativeBinaries/amd64/sqlceer40EN.dll",
+        "NativeBinaries/amd64/sqlceme40.dll",
+        "NativeBinaries/amd64/sqlceqp40.dll",
+        "NativeBinaries/amd64/sqlcese40.dll",
+        "NativeBinaries/x86/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest",
+        "NativeBinaries/x86/Microsoft.VC90.CRT/README_ENU.txt",
+        "NativeBinaries/x86/Microsoft.VC90.CRT/msvcr90.dll",
+        "NativeBinaries/x86/sqlceca40.dll",
+        "NativeBinaries/x86/sqlcecompact40.dll",
+        "NativeBinaries/x86/sqlceer40EN.dll",
+        "NativeBinaries/x86/sqlceme40.dll",
+        "NativeBinaries/x86/sqlceqp40.dll",
+        "NativeBinaries/x86/sqlcese40.dll",
+        "SQLCE_EULA_ENU.rtf",
+        "lib/net40/System.Data.SqlServerCe.Entity.dll",
+        "lib/net40/System.Data.SqlServerCe.dll",
+        "microsoft.sqlserver.compact.4.0.8854.1.nupkg.sha512",
+        "microsoft.sqlserver.compact.nuspec",
+        "tools/Install.ps1",
+        "tools/Uninstall.ps1",
+        "tools/VS.psd1",
+        "tools/VS.psm1"
+      ]
+    },
     "Microsoft.Win32.Registry/4.7.0": {
       "sha512": "KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
       "type": "package",
@@ -2665,6 +3149,137 @@
         "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.xml",
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
+      "sha512": "ilkvNhrTersLmIVAcDwwPqfhUFCg19Z1GVMvCSi3xk6Akq94f4qadLORQCq/T8+9JgMiPs+F/NECw5uauviaNw==",
+      "type": "package",
+      "path": "sqlitepclraw.bundle_e_sqlite3/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net461/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net6.0-android31.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net6.0-android31.0/SQLitePCLRaw.batteries_v2.xml",
+        "lib/net6.0-ios14.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net6.0-ios14.2/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net6.0-tvos10.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/xamarinios10/SQLitePCLRaw.batteries_v2.dll",
+        "sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
+        "sqlitepclraw.bundle_e_sqlite3.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.core/2.1.2": {
+      "sha512": "A8EBepVqY2lnAp3a8jnhbgzF2tlj2S3HcJQGANTYg/TbYbKa8Z5cM1h74An/vy0svhfzT7tVY0sFmUglLgv+2g==",
+      "type": "package",
+      "path": "sqlitepclraw.core/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SQLitePCLRaw.core.dll",
+        "sqlitepclraw.core.2.1.2.nupkg.sha512",
+        "sqlitepclraw.core.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.lib.e_sqlite3/2.1.2": {
+      "sha512": "zibGtku8M4Eea1R3ZCAxc86QbNvyEN17mAcQkvWKBuHvRpMiK2g5anG4R5Be7cWKSd1i6baYz8y4dMMAKcXKPg==",
+      "type": "package",
+      "path": "sqlitepclraw.lib.e_sqlite3/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/net461/SQLitePCLRaw.lib.e_sqlite3.targets",
+        "buildTransitive/net6.0/SQLitePCLRaw.lib.e_sqlite3.targets",
+        "buildTransitive/net7.0/SQLitePCLRaw.lib.e_sqlite3.targets",
+        "lib/net461/_._",
+        "lib/netstandard2.0/_._",
+        "runtimes/alpine-arm/native/libe_sqlite3.so",
+        "runtimes/alpine-arm64/native/libe_sqlite3.so",
+        "runtimes/alpine-x64/native/libe_sqlite3.so",
+        "runtimes/browser-wasm/nativeassets/net6.0/e_sqlite3.a",
+        "runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a",
+        "runtimes/linux-arm/native/libe_sqlite3.so",
+        "runtimes/linux-arm64/native/libe_sqlite3.so",
+        "runtimes/linux-armel/native/libe_sqlite3.so",
+        "runtimes/linux-mips64/native/libe_sqlite3.so",
+        "runtimes/linux-musl-arm/native/libe_sqlite3.so",
+        "runtimes/linux-musl-arm64/native/libe_sqlite3.so",
+        "runtimes/linux-musl-x64/native/libe_sqlite3.so",
+        "runtimes/linux-s390x/native/libe_sqlite3.so",
+        "runtimes/linux-x64/native/libe_sqlite3.so",
+        "runtimes/linux-x86/native/libe_sqlite3.so",
+        "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib",
+        "runtimes/maccatalyst-x64/native/libe_sqlite3.dylib",
+        "runtimes/osx-arm64/native/libe_sqlite3.dylib",
+        "runtimes/osx-x64/native/libe_sqlite3.dylib",
+        "runtimes/win-arm/native/e_sqlite3.dll",
+        "runtimes/win-arm64/native/e_sqlite3.dll",
+        "runtimes/win-x64/native/e_sqlite3.dll",
+        "runtimes/win-x86/native/e_sqlite3.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/e_sqlite3.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/e_sqlite3.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/e_sqlite3.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/e_sqlite3.dll",
+        "sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.provider.e_sqlite3/2.1.2": {
+      "sha512": "lxCZarZdvAsMl2zw9bXHrXK6RxVhB4b23iTFhCOdHFhxfbsxLxWf+ocvswJwR/9Wh/E//ddMi+wJGqUKV7VwoA==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.e_sqlite3/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
+        "sqlitepclraw.provider.e_sqlite3.nuspec"
+      ]
+    },
+    "SqlServerCompact/4.0.8854.1": {
+      "sha512": "l51DpZ78LAXO1yCeEQANlu+EvhAeFgeREwuzcTXk4HewCLgNxlZ2rA/SAOLmBL/XYCDNZvXNePV6rxGfBzNkQw==",
+      "type": "package",
+      "path": "sqlservercompact/4.0.8854.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "sqlservercompact.4.0.8854.1.nupkg.sha512",
+        "sqlservercompact.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -3475,8 +4090,12 @@
     "net6.0": [
       "Bogus >= 34.0.2",
       "HotChocolate.AspNetCore >= 13.6.0-preview.21",
+      "HotChocolate.Data.EntityFramework >= 13.6.0-preview.23",
       "Microsoft.EntityFrameworkCore >= 6.0.22",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.22"
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.22",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.22",
+      "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.22",
+      "SqlServerCompact >= 4.0.8854.1"
     ]
   },
   "packageFolders": {
@@ -3524,13 +4143,31 @@
             "target": "Package",
             "version": "[13.6.0-preview.21, )"
           },
+          "HotChocolate.Data.EntityFramework": {
+            "target": "Package",
+            "version": "[13.6.0-preview.23, )"
+          },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.22, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.22, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[6.0.22, )"
+          },
+          "Microsoft.EntityFrameworkCore.Sqlite": {
+            "target": "Package",
+            "version": "[6.0.22, )"
+          },
+          "SqlServerCompact": {
+            "target": "Package",
+            "version": "[4.0.8854.1, )"
           }
         },
         "imports": [
@@ -3555,5 +4192,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.SqlServer.Compact 4.0.8854.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.SqlServer.Compact",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

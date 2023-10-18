@@ -1,3 +1,4 @@
+using GraphQLHotChocolate.Models;
 using GraphQLHotChocolate.Shcema.Queries;
 
 namespace GraphQLHotChocolate.Shcema.Mutations;
