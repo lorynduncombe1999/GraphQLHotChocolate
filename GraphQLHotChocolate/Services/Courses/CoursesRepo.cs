@@ -7,7 +7,9 @@ public class CoursesRepo
 {
     //Ensures new DB context instance and resolve any EF concurrency issues
     private readonly IDbContextFactory<SchoolDbContext> _contextFactory;
-
+    
+    //Will not work in a distributed environment due to it being static (In-Memory Lock)
+    private static readonly SemaphoreSlim SemaphoreSlim = new(1, 1);
     public CoursesRepo(IDbContextFactory<SchoolDbContext> contextFactory)
     {
         _contextFactory = contextFactory;
@@ -17,11 +19,23 @@ public class CoursesRepo
     {
         using (SchoolDbContext context = _contextFactory.CreateDbContext())
         {
-            context.Courses.Add(course);
-            await context.SaveChangesAsync();
+            try
+            {
+                if (!await SemaphoreSlim.WaitAsync(100))
+                {
+                    throw new Exception("Please try again later");
+                }
 
-            return course;
+                //Critical section goes inside of the Mutex
+                context.Courses.Add(course);
+                await context.SaveChangesAsync();
+            }
+            finally
+            {
+                SemaphoreSlim.Release();
+            }
         }
+        return course;
     }
 
     public async Task<CourseDTO> Update(CourseDTO course)
